@@ -7,11 +7,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-    <Button
-        android:id="@+id/btn_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="textview"/>
+
+        <Button
+            android:id="@+id/btn_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LinearLayout" />
+
+        <Button
+            android:id="@+id/btn_rela"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RelativeLayout" />
+
+        <Button
+            android:id="@+id/btn_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="textview" />
     </LinearLayout>
 
 </ScrollView>

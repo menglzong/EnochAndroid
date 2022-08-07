@@ -17,10 +17,10 @@
             android:name=".TextViewActivity"
             android:exported="false" />
         <activity
-            android:name=".RelativeLayout"
+            android:name=".RelativeLayoutActivity"
             android:exported="false" />
         <activity
-            android:name=".LinearLayout"
+            android:name=".LinearLayoutActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
