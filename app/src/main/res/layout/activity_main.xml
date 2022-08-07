@@ -1,52 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <View
-        android:id="@+id/view_1"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:background="@color/black" />
-
-    <View
-        android:id="@+id/view_2"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_below="@+id/view_1"
-        android:layout_marginTop="20dp"
-        android:background="#00e600" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/view_2"
-        android:layout_marginTop="20dp"
-        android:background="#0066ff"
-        android:padding="15dp">
-
-        <View
-            android:layout_width="100dp"
-            android:layout_height="match_parent"
-            android:background="#ff0000" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@color/black"
-            android:padding="15dp">
-
-            <View
-                android:id="@+id/view_3"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:background=" #ffcc66" />
-            <View
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
-                android:background="#996600"
-                android:layout_toRightOf="@id/view_3"
-                android:layout_marginLeft="10dp"/>
-        </RelativeLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="textview"/>
     </LinearLayout>
-</RelativeLayout>
+
+</ScrollView>
