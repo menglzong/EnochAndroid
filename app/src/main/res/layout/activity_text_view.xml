@@ -3,9 +3,67 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="hahahhaha"/>
+        android:text="文本展示"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这是随便的文本：粉色口红反馈就是分开解释的见风使舵减肥还是看得见"
+        android:textColor="#1a1aff" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="斯蒂芬收快递恢复开始就会分开解释的话负IEu吧" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/channel_like_1"
+        android:text="筛选"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/textview_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这是带中划线"
+        android:textColor="#1a1aff"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textview_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这是带下划线"
+        android:textColor="#1a1aff"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textview_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#1a1aff"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textview_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这是跑马灯这是跑马灯这是跑马灯这是跑马灯这是跑马灯这是跑马灯这是跑马灯这是跑马灯这是跑马灯"
+        android:textColor="#1a1aff"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="10dp"/>
 
 </LinearLayout>

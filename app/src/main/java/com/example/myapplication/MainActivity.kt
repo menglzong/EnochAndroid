@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         mBtnTextView = findViewById(R.id.btn_tv)
         mBtnTextView?.setOnClickListener(View.OnClickListener { v ->
-            val inter = Intent(this, TextViewActivity().javaClass)
+            val inter = Intent(this, TextViewActivity::class.java)
             startActivity(inter)
         })
     }
