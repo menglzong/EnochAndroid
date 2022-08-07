@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     var mBtnReal: Button? = null
     var mBtnTextView: Button? = null
     var mBtnButton: Button? = null
+    var mEditTextViewBtn: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +38,12 @@ class MainActivity : AppCompatActivity() {
         mBtnButton = findViewById(R.id.btn_btn)
         mBtnButton?.setOnClickListener {
             val inter = Intent(this, ButtonActivity::class.java)
+            startActivity(inter)
+        }
+
+        mEditTextViewBtn = findViewById(R.id.btn_etv)
+        mEditTextViewBtn?.setOnClickListener {
+            val inter = Intent(this, EditTextViewActivity::class.java)
             startActivity(inter)
         }
     }

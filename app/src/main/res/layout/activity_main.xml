@@ -12,25 +12,36 @@
             android:id="@+id/btn_linear"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LinearLayout" />
+            android:text="LinearLayout"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/btn_rela"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RelativeLayout" />
+            android:text="RelativeLayout"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/btn_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="textview" />
+            android:text="TextView"
+            android:textAllCaps="false"/>
 
         <Button
             android:id="@+id/btn_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="button" />
+            android:text="Button"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_etv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EditTextView"
+            android:textAllCaps="false"/>
 
     </LinearLayout>
 
