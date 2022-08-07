@@ -8,8 +8,10 @@
         android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@drawable/bg_edit_text"
+        android:background="@drawable/bg_edit_input"
         android:hint="用户"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
         android:textSize="20sp" />
 
     <EditText
@@ -17,8 +19,21 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/et_name"
-        android:background="@drawable/bg_edit_text"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit_input"
         android:hint="密码"
         android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
         android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/et_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="登录"
+        android:textSize="20sp"
+        android:layout_below="@+id/et_pwd"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_2"/>
 </RelativeLayout>
