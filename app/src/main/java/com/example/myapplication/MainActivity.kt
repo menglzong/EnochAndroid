@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
 
     var mBtnLinear: Button? = null
     var mBtnReal: Button? = null
+    var mBtnContraint: Button? = null
     var mBtnTextView: Button? = null
     var mBtnButton: Button? = null
     var mEditTextViewBtn: Button? = null
@@ -26,6 +27,12 @@ class MainActivity : AppCompatActivity() {
         mBtnReal = findViewById(R.id.btn_rela)
         mBtnReal?.setOnClickListener {
             val inter = Intent(this, RelativeLayoutActivity::class.java)
+            startActivity(inter)
+        }
+
+        mBtnContraint = findViewById(R.id.btn_con)
+        mBtnContraint?.setOnClickListener {
+            val inter = Intent(this, ContraintLayoutActivity::class.java)
             startActivity(inter)
         }
 
