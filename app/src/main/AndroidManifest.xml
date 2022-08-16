@@ -17,12 +17,6 @@
             android:name=".MyRecyclerView"
             android:exported="false" />
         <activity
-            android:name=".ListView"
-            android:exported="false" />
-        <activity
-            android:name=".RadioButton"
-            android:exported="false" />
-        <activity
             android:name=".ContraintLayoutActivity"
             android:exported="false" />
         <activity
