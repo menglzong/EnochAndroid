@@ -32,8 +32,12 @@ class MyRecyclerView : AppCompatActivity() {
         }
 
         override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-            var textView = holder.itemView.findViewById<TextView>(R.id.text)
-            textView.text = "事事顺遂$position"
+            var titleView = holder.itemView.findViewById<TextView>(R.id.title)
+            titleView.text = "这是标题$position"
+
+            var msgView = holder.itemView.findViewById<TextView>(R.id.text)
+            msgView.text = "这是描述这是描述$position"
+
         }
 
         override fun getItemCount(): Int {
