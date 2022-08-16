@@ -33,6 +33,7 @@ class TabMainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        HiOkHttp.get("/user/query?userId=1600932269")
+//        HiOkHttp.get("/user/query?userId=1600932269")
+        HiOkHttp.getAsync("/user/query?userId=1600932269")
     }
 }
