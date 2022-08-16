@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     var mBtnTextView: Button? = null
     var mBtnButton: Button? = null
     var mEditTextViewBtn: Button? = null
+    var mRecyclerViewBtn: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,6 +52,12 @@ class MainActivity : AppCompatActivity() {
         mEditTextViewBtn = findViewById(R.id.btn_etv)
         mEditTextViewBtn?.setOnClickListener {
             val inter = Intent(this, EditTextViewActivity::class.java)
+            startActivity(inter)
+        }
+
+        mRecyclerViewBtn = findViewById(R.id.btn_recycler)
+        mRecyclerViewBtn?.setOnClickListener {
+            val inter = Intent(this, MyRecyclerView::class.java)
             startActivity(inter)
         }
     }
