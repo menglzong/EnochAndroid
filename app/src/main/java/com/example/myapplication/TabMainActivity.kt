@@ -34,6 +34,7 @@ class TabMainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
 
 //        HiOkHttp.get("/user/query?userId=1600932269")
-        HiOkHttp.getAsync("/user/query?userId=1600932269")
+//        HiOkHttp.getAsync("/user/query?userId=1600932269")
+        HiOkHttp.postAsync("/tag/toggleTagFollow")
     }
 }
