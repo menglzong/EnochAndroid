@@ -2,6 +2,8 @@ package com.example.myapplication.http
 
 import android.util.Log
 import okhttp3.*
+import okhttp3.MediaType.Companion.toMediaType
+import org.json.JSONObject
 import java.io.IOException
 
 object HiOkHttp {
@@ -52,6 +54,27 @@ object HiOkHttp {
             .add("userId", "1600932269")
             .add("tagId", "71")
             .build()
+        //构造请求体
+        val request = Request.Builder().url(BASE_URL + url).post(body).build()
+        //构造请求对象
+        val call = client.newCall(request)
+        //同步执行
+        val result = call.enqueue(object : Callback {
+            override fun onFailure(call: Call, e: IOException) {
+                Log.e("OkHttp, , Post Failure", e.toString())
+            }
+
+            override fun onResponse(call: Call, response: Response) {
+                var body: String? = response.body?.string()
+                body?.let { Log.e("OkHttp, Post Response", it) }
+            }
+        })
+    }
+
+    fun postAsyncJson(url: String, json: String) {
+        var jsonObj = JSONObject()
+        jsonObj.put("name", "meng")
+        val body = RequestBody.create("application/json;charset=utf-8".toMediaType(), jsonObj.toString())
         //构造请求体
         val request = Request.Builder().url(BASE_URL + url).post(body).build()
         //构造请求对象
